@@ -35,7 +35,7 @@ namespace JULIAdotNET
             var proc = new Process {
                 StartInfo = new ProcessStartInfo {
                     FileName = "julia",
-                    Arguments = "-e \"println(\"\"JULIAPPPATH$(Sys.BINDIR)JULIAPPPATH\"\")\"",
+                    Arguments = @"-e ""println(\""JULIAPPPATH$(Sys.BINDIR)JULIAPPPATH\"")""",
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
                     CreateNoWindow = true
